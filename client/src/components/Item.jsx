@@ -1,8 +1,7 @@
 import { shades } from "../theme";
 import { Button, IconButton, Typography,Box, useTheme  } from "@mui/material";
-import AddIcon from '@mui/icons-material/Add';
+import AddIcon from '@mui/material/Add';
 import RemoveIcon from '@mui/icons-material/Remove';
-
 import { addToCart } from "../state";
 import { useNavigate} from "react-router-dom";
 import { useDispatch } from "react-redux";
@@ -21,7 +20,7 @@ const Item = ({item, width}) => {
     const { category, price, name, image } = item.attributes;
     const {
         data: {
-            attributes: {
+            attributes: { 
                 formats: {
                     medium: { url },
                 }
